@@ -2,23 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <link href="./desktopStyles.css" type="text/css" rel="stylesheet">
-    <link rel="shortcut icon" type="img/png" href="../images/grafite_logo_transparent.png">
-    <script src="../script.js" type = text/javascript></script>
-    <title>Grafite | Home</title>
+    <link rel="shortcut icon" type="img/png" href="./images/grafite_logo_transparent.png">
+    <script src="./grafitescript.js" type = text/javascript></script>
+    <title>Grafite | Team</title>
     <meta charset="utf-8">
   </head>
 
   <!-- _________________________________________________VISUAL DIVIDER BETWEEN HEAD AND BODY_________________________________________________ -->
 
-  <body onload = "homePageStartup()">
-    <!--__________________________NAVIGATION BAR__________________________-->
+  <body>
+    <!--__________________NAVIGATION BAR__________________-->
     <div id = "navbarWrapper">
       <img id = "navbarLogo" src="../images/grafite_logo_transparent.png" alt="Grafite company logo." onclick="location.href='./index.html'">
 
       <!--________Navigation Buttons________-->
       <div id = "leftNavbarButtonWrapper">
         <div class="leftNavbarButtons" onclick="location.href='./ourMission_desktop.html'">Our Mission</div>
-        <div class="leftNavbarButtons" onclick="location.href='./team_desktop.html'">Team</div>
+        <div class="leftNavbarButtons" id = "teamPageNavButton" click="location.href='./team_desktop.html'">Team</div>
         <div class="leftNavbarButtons" onclick="location.href='./services_desktop.html'">Services</div>
         <div class="leftNavbarButtons" onclick="location.href='./contactUs_desktop.html'">Contact Us</div>
       </div>
@@ -32,31 +32,6 @@
 
       <!--________Donate Button________-->
       <button id = "donateButton" onclick="window.open('https://gofund.me/3dde003b', '_blank')">Donate Now</button>
-
     </div>
-
-
-    <!--__________________________HOMEPAGE CONTENT__________________________-->
-
-    <!--________Top Homepage Image________-->
-    <div id = "homePageTopImageWrapper">
-      <img id = "homePageTopImage" src="../images/ps12_kids_colored-ConvertImage - Cropped2.jpg" alt = "PS12 Kids">
-    </div>
-
-    <!--________"See Our Past Work" Box________-->
-    <div id = "homePageSeeOurPastWorkWrapper">
-      <div id = "seeOurPastWorkBox">
-        <div id = "extraSpace"></div>
-        <div id = "seeOurPastWorkText">Take a look at what we've done so far!</div>
-        <div id = "seeOurPastWorkButtonWrapper"><button id = "seeOurPastWorkButton">See our work!</button></div>
-      </div>
-    </div>
-
-    <!--<div id = "getInTouchWrapper">
-      <span style = "font-weight: bold;">Get in touch with us!</span>
-      <br>
-      Here at Grafite, we want to work closely with the students we help and our donors. Contact us personally if you have questions our website doesn't answer! We will be glad to answer any questions.
-    </div>-->
-
   </body>
 </html>
