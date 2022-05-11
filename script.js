@@ -1,17 +1,14 @@
-function homePageStartup() {
-  let pageWidth = screen.width;
-  pageWidth += "px";
+document.addEventListener('DOMContentLoaded', function() {
+  setInterval(function() {
+    var homepageTopImageWrapper = document.getElementById("homePageTopImageWrapper");
+    //var browserBarsHeight = window.outerHeight - window.innerHeight;
 
-  /*let pageHeightMinusNavbar = window.innerHeight - document.getElementById("navbarWrapper").offsetHeight;
-  pageHeightMinusNavbar += "px";*/
+    var browserBarsHeight = window.screen.availHeight - window.innerHeight;
+    var height = window.screen.availHeight - browserBarsHeight - 58;
+    height += "px";
+    homePageTopImageWrapper.style.height = height;
 
-  let tabsHeight = window.outerHeight - window.innerHeight
-  let screenHeightMinusTabs = tabsHeight - screen.height
-  let wrapperHeight = screenHeightMinusTabs - document.getElementById("navbarWrapper").offsetHeight;
-  wrapperHeight += "px";
+    console.log(window.outerHeight - window.screen.availHeight);
 
-  document.getElementById("homePageTopImageWrapper").style.height = tabsHeight;
-  document.getElementById("homePageSeeOurPastWorkWrapper").style.height = tabsHeight;
-  document.getElementById("homePageTopImage").style.width = pageWidth;
-  //document.getElementById("getInTouchWrapper").style.marginTop = pageHeightMinusNavbar;
-}
+  }, 100);
+}, false);
