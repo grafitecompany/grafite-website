@@ -27,13 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
       height += 14;
     }
   }
-
-  let getInTouchWrapperTopMargin = height - 58;
-  getInTouchWrapperTopMargin += "px";
+  
   height += "px";
   homePageTopImageWrapper.style.height = height;
   homePageSeeOurPastWorkWrapper.style.height = height;
-  getInTouchWrapper.style.marginTop = getInTouchWrapperTopMargin;
+  getInTouchWrapper.style.marginTop = height;
 }, false);
 
 
