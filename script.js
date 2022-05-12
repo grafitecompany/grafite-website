@@ -4,6 +4,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var homepageTopImageWrapper = document.getElementById("homePageTopImageWrapper");
   var homePageSeeOurPastWorkWrapper = document.getElementById("homePageSeeOurPastWorkWrapper");
+  var getInTouchWrapper = document.getElementById("getInTouchWrapper");
 
   // Check what browser is being used
   let userAgent = navigator.userAgent;
@@ -27,13 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  let getInTouchWrapperTopMargin = height - 58;
+  getInTouchWrapperTopMargin += "px";
   height += "px";
   homePageTopImageWrapper.style.height = height;
   homePageSeeOurPastWorkWrapper.style.height = height;
+  getInTouchWrapper.style.marginTop = getInTouchWrapperTopMargin;
 }, false);
 
 
-window.addEventListener('resize', function() {
+/*window.addEventListener('resize', function() {
   var homepageTopImageWrapper = document.getElementById("homePageTopImageWrapper");
   var homePageSeeOurPastWorkWrapper = document.getElementById("homePageSeeOurPastWorkWrapper");
 
@@ -62,4 +66,4 @@ window.addEventListener('resize', function() {
   height += "px";
   homePageTopImageWrapper.style.height = height;
   homePageSeeOurPastWorkWrapper.style.height = height;
-}, false)
+}, false)*/
