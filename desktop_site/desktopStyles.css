@@ -145,7 +145,7 @@ html, body{
   z-index: 2;
   font-size: 350%;
   grid-gap: 0px;
-  border: 3px dashed white;
+  /*border: 3px dashed white;*/
   border-radius: 30px;
 }
 
@@ -242,8 +242,8 @@ html, body{
 
 /*--------------------------------FOOTER--------------------------------*/
 #footerWrapper {
-  background: #363636;
-  color: white;
+  background: white;
+  color: black;
   height: 300px;
   width: 100%;
   display: flex;
@@ -253,7 +253,7 @@ html, body{
 
 #footerContent {
   height: 200px;
-  background: red;
+  /*background: red;*/
   width: 100%;
   display: flex;
   justify-content: center;
@@ -261,25 +261,76 @@ html, body{
 }
 
 #footerLogos {
-  display: inline-flex;
-  width: 30%;
+  display: flex;
+  width: 40%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  font-family: "Exo 2";
   font-size: 2.5em;
+}
+
+#footerLogosWrapper {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.4%;
+}
+
+#footerGrafiteText{
+  display: flex;
+  font-family: "Exo 2";
+  font-size: 1.2em;
+  grid-column: 1 / 4;
+}
+
+#footerFacebookLogo {
+  width: 0.5cm;
+}
+
+#footerInstagramLogo {
+  width: 0.5cm;
+}
+
+#footerTwitterLogo {
+  width: 0.5cm;
+}
+
+.footerSocialLogo {
+  text-align: center;
+}
+
+.footerSocialLogo:hover {
+  cursor: pointer;
 }
 
 #footerSpace {
   display: inline-flex;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 
 #footerLinks {
-  display: inline-flex;
-  width: 30%;
+  display: flex;
+  width: 40%;
   height: 100%;
   justify-content: center;
   align-items: center;
+}
+
+#footerLinksWrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 90%;
+  grid-row-gap: 30px;
+}
+
+.footerLink {
+  font-size: 1.2em;
+}
+
+.footerLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footerLink:active {
+  color: grey;
 }
